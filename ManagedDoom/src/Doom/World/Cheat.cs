@@ -37,7 +37,8 @@ namespace ManagedDoom
             new CheatInfo("killem", (cheat, typed) => cheat.KillMonsters(), false),
             new CheatInfo("fhhall", (cheat, typed) => cheat.KillMonsters(), false),
             new CheatInfo("idclev??", (cheat, typed) => cheat.ChangeLevel(typed), true),
-            new CheatInfo("idmus??", (cheat, typed) => cheat.ChangeMusic(typed), false)
+            new CheatInfo("idmus??", (cheat, typed) => cheat.ChangeMusic(typed), false),
+            new CheatInfo("idmypos", (cheat, typed) => cheat.ShowMyPosition(), false),
         };
 
         private static readonly int maxCodeLength = list.Max(info => info.Code.Length);
@@ -203,6 +204,11 @@ namespace ManagedDoom
         private void FullMap()
         {
             world.AutoMap.ToggleCheat();
+        }
+
+        private void ShowMyPosition()
+        {
+          ////
         }
 
         private void ShowPowerUpList()
