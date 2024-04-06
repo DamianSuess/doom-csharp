@@ -206,9 +206,12 @@ namespace ManagedDoom
             world.AutoMap.ToggleCheat();
         }
 
+        /// <summary>Display the player's current position.</summary>
         private void ShowMyPosition()
         {
-          ////
+            var player = world.ConsolePlayer;
+            var buf = $"ang=0x{player.Mobj.Angle:X4};x,y=(0x{player.Mobj.X:X4},0x{player.Mobj.Y:X4})";
+            player.SendMessage(buf);
         }
 
         private void ShowPowerUpList()
@@ -414,8 +417,6 @@ namespace ManagedDoom
             world.Options.Music.StartMusic(Map.GetMapBgm(options), true);
             world.ConsolePlayer.SendMessage(DoomInfo.Strings.STSTR_MUS);
         }
-
-
 
         private class CheatInfo
         {
