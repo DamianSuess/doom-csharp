@@ -33,11 +33,12 @@ namespace ManagedDoom
             new CheatInfo("idbehold", (cheat, typed) => cheat.ShowPowerUpList(), false),
             new CheatInfo("idbehold?", (cheat, typed) => cheat.DoPowerUp(typed), false),
             new CheatInfo("idchoppers", (cheat, typed) => cheat.GiveChainsaw(), false),
+            new CheatInfo("idmypos", (cheat, typed) => cheat.ShowMyPosition(), false),
             new CheatInfo("tntem", (cheat, typed) => cheat.KillMonsters(), false),
             new CheatInfo("killem", (cheat, typed) => cheat.KillMonsters(), false),
             new CheatInfo("fhhall", (cheat, typed) => cheat.KillMonsters(), false),
             new CheatInfo("idclev??", (cheat, typed) => cheat.ChangeLevel(typed), true),
-            new CheatInfo("idmus??", (cheat, typed) => cheat.ChangeMusic(typed), false)
+            new CheatInfo("idmus??", (cheat, typed) => cheat.ChangeMusic(typed), false),
         };
 
         private static readonly int maxCodeLength = list.Max(info => info.Code.Length);
@@ -203,6 +204,14 @@ namespace ManagedDoom
         private void FullMap()
         {
             world.AutoMap.ToggleCheat();
+        }
+
+        /// <summary>Display the player's current position.</summary>
+        private void ShowMyPosition()
+        {
+            var player = world.ConsolePlayer;
+            var buf = $"ang=0x{player.Mobj.Angle:X4};x,y=(0x{player.Mobj.X:X4},0x{player.Mobj.Y:X4})";
+            player.SendMessage(buf);
         }
 
         private void ShowPowerUpList()
@@ -408,8 +417,6 @@ namespace ManagedDoom
             world.Options.Music.StartMusic(Map.GetMapBgm(options), true);
             world.ConsolePlayer.SendMessage(DoomInfo.Strings.STSTR_MUS);
         }
-
-
 
         private class CheatInfo
         {
