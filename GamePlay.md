@@ -23,10 +23,11 @@ If you own Doom already, add one of the following approved `WAD` files in the sa
 
 | | | |
 |-|-|-|
-| `F2` = Save               | `F3` = Load       | `F4` = Sound Volume
-| `F5` = Detail             | `F6` = Quick Save | `F7` = End Game
-| `F8` = Messages           | `F9` = Quick Load | `F10` = Quit
-| `F11` = Gamma Correction  | `-` = Reduce View | `+` = Increase View
+| `F1` = Help               | `F2` = Save              | `F3` = Load 
+| `F4` = Sound Volume       | `F5` = Detail            | `F6` = Quick Save
+| `F7` = End Game           | `F8` = Messages          | `F9` = Quick Load
+| `F10` = Quit              | `F11` = Gamma Correction |
+| `-` = Reduce View         | `+` = Increase View
 
 ### Auto Map
 
@@ -34,12 +35,12 @@ If you own Doom already, add one of the following approved `WAD` files in the sa
 |-|-|-|
 | `F` = Follow Mode | `M` = Mark Place | `C` = Clear Marks
 
-### Weaponds
+### Weapons
 
 | | | |
 |-|-|-|
 | `1` = Fist/Chainsaw | `2` = Pistol | `3` = Shotgun
-| `4` = Chaingun | `5` = Rocket | `6` = Plasma Rifle
+| `4` = Chaingun      | `5` = Rocket | `6` = Plasma Rifle
 | `7` = BFG 9000
 
 ### Movement
@@ -70,7 +71,7 @@ If you own Doom already, add one of the following approved `WAD` files in the sa
 * IDCHOPPERS -- Gain chainsaw
 * IDCLEVxx -- Warp to level 'xx' where xx is 01 to 19
 * IDMYPOS -- Displays your position and bearing
-* IDMUSxx -- Music select. 'xx' is the level who's song you want.
+* IDMUSxx -- Music select. 'xx' is the level whose song you want.
 * IDSPISPOPD -- Walk through walls!
 * IDCLIP -- Walk through walls
 
