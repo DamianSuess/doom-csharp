@@ -2,6 +2,8 @@
 
 Getting started, keyboard map, cheat codes, and reference documents.
 
+The check out the official [DOOM source](https://github.com/id-Software/DOOM) for more information.
+
 ## Getting Started
 
 If you own Doom already, add one of the following approved `WAD` files in the same folder as `managed-doom.exe`.
@@ -23,7 +25,7 @@ If you own Doom already, add one of the following approved `WAD` files in the sa
 
 | | | |
 |-|-|-|
-| `F1` = Help               | `F2` = Save              | `F3` = Load 
+| `F1` = Help               | `F2` = Save              | `F3` = Load
 | `F4` = Sound Volume       | `F5` = Detail            | `F6` = Quick Save
 | `F7` = End Game           | `F8` = Messages          | `F9` = Quick Load
 | `F10` = Quit              | `F11` = Gamma Correction |
@@ -77,6 +79,7 @@ If you own Doom already, add one of the following approved `WAD` files in the sa
 
 ## More Info
 
+* https://github.com/id-Software/DOOM
 * https://doomwiki.org/wiki/Entryway
 * https://doomwiki.org/wiki/IWAD
   * Shareware - https://distro.ibiblio.org/slitaz/sources/packages/d/doom1.wad
